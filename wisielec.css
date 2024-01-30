@@ -1,0 +1,97 @@
+body{
+    background: black;
+}
+#main {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+#life{
+    text-align:center;
+    display: inline-flex;
+    margin: 30px 0 30px 0;
+}
+
+.lif {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.lif::before,
+.lif::after{
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: red;
+    border-radius: 25px 25px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+
+.lif::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+.ded::before,
+.ded::after{
+    background: grey;
+    opacity: 30%;
+}
+
+#console {
+    float: left;
+    text-align:center;
+    width: 50%;
+    margin-left: 25%;
+}
+.letters{
+    display: inline-flex;
+    border: 2px grey solid;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    border-radius: 15px;
+    font-family: "Arial Rounded MT Bold";
+}
+.letters:hover {
+    border: 2px white solid;
+    background: grey;
+}
+#category{
+    margin: 0 0 30px 0;
+}
+#password{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.wrong{
+    background: grey;
+}
+.reset{
+    border: 2px solid grey;
+    color: white;
+}
+.reset:hover{
+    border: 2px white solid;
+    background: grey;
+}
