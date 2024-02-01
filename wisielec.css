@@ -70,7 +70,7 @@ div{
     justify-content: center;
     float: left;
     border-radius: 15px;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial Rounded MT Bold", serif;
 }
 .letters:hover {
     border: 2px white solid;
@@ -95,3 +95,16 @@ div{
     border: 2px white solid;
     background: grey;
 }
+.correctAnswer {
+    background-color: #003300;
+    color: green;
+    border: 2px solid green;
+    cursor: default;
+}
+
+.wrongAnswer {
+    background-color: #330000;
+    color: red;
+    border: 2px solid red;
+    cursor: default;
+ }
